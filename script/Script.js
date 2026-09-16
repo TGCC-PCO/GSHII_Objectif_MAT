@@ -1539,7 +1539,6 @@ function classeGantt(
         statut
     ) {
 
-
         case "termine":
 
             return "gantt-termine";
@@ -1562,7 +1561,6 @@ function classeGantt(
         default:
 
             return "gantt-non-commence";
-
     }
 
 }
