@@ -1,0 +1,1015 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #f5f6f4;
+    color: #18304a;
+
+    font-family: "Inter", sans-serif;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.dashboard {
+    width: 100%;
+    max-width: 1900px;
+
+    margin: auto;
+
+    padding: 28px 34px 22px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 8px;
+    padding-bottom: 20px ;
+    border-bottom: 1px solid #d7d9d7;
+
+    margin-bottom: 0px ;
+}
+
+.header-left {
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px ;
+
+    gap: 18px;
+}
+
+.header-title {
+
+    border-left: 1px solid #d2d5d3;
+
+    padding-left: 18px;
+}
+
+.project-name {
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    color: #7c858d;
+
+    margin-bottom: 4px;
+}
+
+.header h1 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    color: #18304a;
+
+    line-height: 1.15;
+}
+
+.header p {
+
+    font-size: 12px;
+
+    color: #71808c;
+
+    margin-top: 5px;
+}
+
+.header-right {
+
+    display: flex;
+    align-items: center;
+}
+
+.week-info {
+
+    border-left: 1px solid #c9c8c4;
+    font-size: 15px;
+    padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+/* =========================================================
+   BOTTOM SECTION
+   PLANNING + LISTE
+========================================================= */
+
+.bottom-section {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr;
+
+    gap: 10px;
+
+    align-items: stretch;
+}
+.planning-section,
+.table-section {
+    height: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #e0e3e1;
+    padding: 10px;
+}
+
+/* =========================================================
+   SECTION TITRE MAQUETTE-PLANNING-LISTE
+========================================================= */
+
+.section-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 17px 19px 13px;
+}
+
+.section-kicker {
+
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+
+    color: #b08a50;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+.section-header h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    color: #18304a;
+}
+
+.section-header p {
+
+    font-size: 12px;
+
+    color: #7c8790;
+
+    margin-top: 4px;
+    
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   MAQUETTE 
+========================================================= */
+
+.top-section {
+
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.model-section {
+
+    width: 100%;
+}
+
+.model-image-wrapper {
+
+    width: 100%;
+
+    height: 500px;
+
+    overflow: hidden;
+
+    background: #e8e9e6;
+}
+
+.model-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* =========================================================
+   PLANNING
+========================================================= */
+.planning-section {
+
+    width: 100%;
+    min-height:300px ;
+
+    background: #ffffff;
+
+    border:
+        1px solid #e0e3e1;
+
+    padding: 10px;
+}
+
+.planning-header {
+
+    align-items:
+        center;
+}
+
+.planning-filter select {
+
+    appearance: none;
+
+    background: #ffffff;
+
+    border:
+        1px solid #d9ddda;
+
+    border-radius: 3px;
+
+    padding:
+        9px 34px 9px 13px;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 10px;
+
+    color: #18304a;
+
+    cursor: pointer;
+
+    outline: none;
+
+    min-width: 210px;
+
+    background-image:
+
+        linear-gradient(
+            45deg,
+            transparent 50%,
+            #7d858b 50%
+        ),
+
+        linear-gradient(
+            135deg,
+            #7d858b 50%,
+            transparent 50%
+        );
+
+    background-position:
+
+        calc(100% - 15px) 50%,
+
+        calc(100% - 11px) 50%;
+
+    background-size:
+
+        5px 5px,
+
+        5px 5px;
+
+    background-repeat:
+        no-repeat;
+}
+
+.planning-filter select:hover {
+
+    border-color:
+        #b9a27d;
+}
+
+.planning-filter select:focus {
+
+    border-color:
+        #b9a27d;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(
+            176,
+            138,
+            80,
+            0.08
+        );
+}
+
+/* =========================================================
+   PLANNING TABLE
+========================================================= */
+.planning-container {
+
+    padding:
+        0 0 4px;
+
+    overflow-x:
+        auto;
+}
+
+/* =========================================================
+   PLANNING GRID
+========================================================= */
+
+.planning-grid {
+
+    display: grid;
+
+    border:
+        1px solid #e0e3e1;
+
+    font-size: 9px;
+
+    min-width: 920px;
+}
+
+/* =========================================================
+   PLANNING ROW
+========================================================= */
+
+.planning-row {
+
+    display: grid;
+
+    grid-template-columns:
+        28px
+        minmax(
+            115px,
+            2.8fr
+        )
+
+        65px
+
+        65px
+
+        42px
+
+        72px
+
+        repeat(6, 1fr);
+    min-height: 43px;
+
+    border-bottom:
+        1px solid #e8eae8;
+}
+
+.task-number {
+    justify-content: center;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 600;
+    color: #8b9297;
+}
+
+.planning-row:last-child {
+
+    border-bottom:
+        none;
+}
+
+/* =========================================================
+   PLANNING CELL
+========================================================= */
+
+.planning-cell {
+
+    display: flex;
+
+    align-items:
+        center;
+
+    padding:
+        5px 7px;
+
+    border-right:
+        1px solid #e8eae8;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.planning-cell:last-child {
+
+    border-right:
+        none;
+}
+
+/* =========================================================
+   PLANNING HEADER ROW
+========================================================= */
+
+.planning-header-row {
+
+    background:
+        #f4f5f3;
+
+    min-height:
+        30px;
+
+    font-weight:
+        700;
+
+    color:
+        #425467;
+}
+
+.planning-header-row
+.planning-cell {
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    font-size:
+        10px;
+}
+
+/* =========================================================
+   PLANNING TASK INFO
+========================================================= */
+
+.task-info {
+
+    display: flex;
+
+    flex-direction:
+        column;
+
+    gap: 3px;
+}
+
+.task-zone {
+
+    font-size:
+        9px;
+
+    font-weight:
+        600;
+        
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        1px;
+
+    color:
+        #72787e;
+}
+
+.task-name {
+
+    font-size:
+        11px;
+
+    font-weight:
+        600;
+
+    color:
+        #18304a;
+}
+
+/* =========================================================
+   PLANNING DATES
+========================================================= */
+
+.task-date {
+
+    justify-content:
+        center;
+
+    color:
+        #71808c;
+
+    font-size:
+        10px;
+}
+
+
+/* =========================================================
+   PLANNING STATUS
+========================================================= */
+
+.task-status {
+
+    justify-content:
+        center;
+
+    text-align:
+        center;
+
+    font-size:
+        10px;
+
+    font-weight:
+        600;
+}
+
+.status-dot {
+
+    width:
+        6px;
+
+    height:
+        6px;
+
+    border-radius:
+        50%;
+
+    margin-right:
+        5px;
+
+    flex-shrink:
+        0;
+}
+
+
+/* =========================================================
+   PLANNING STATUS COLORS
+========================================================= */
+
+.status-termine {
+
+    color:
+        #3c8f51;
+}
+
+.status-termine
+.status-dot {
+
+    background:
+        #98daa8;
+}
+
+.status-critique {
+
+    color:
+        #c43d38;
+}
+
+.status-critique
+.status-dot {
+
+    background:
+        #c43d38;
+}
+
+.status-cours {
+
+    color:
+        #3974ad;
+}
+
+.status-cours
+.status-dot {
+
+    background:
+        #5592d2;
+}
+
+.status-objectif {
+
+    color:
+        #a47a3c;
+}
+
+.status-objectif
+.status-dot {
+
+    background:
+        #d1a35d;
+}
+
+.status-non-commence {
+
+    color:
+        #8b9297;
+}
+
+.status-non-commence
+.status-dot {
+
+    background:
+        #aeb4b8;
+}
+
+
+/* =========================================================
+   PLANNING GANTT
+========================================================= */
+
+.gantt-cell {
+
+    padding:
+        0;
+
+    background:
+        #fbfcfb;
+}
+
+.gantt-bar {
+
+    position:
+        absolute;
+
+    height:
+        12px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    border-radius:
+        2px;
+
+    left:
+        0px;
+
+    right:
+        0px;
+}
+
+.gantt-termine {
+
+    background:
+        #6caf8c;
+}
+
+.gantt-critique {
+
+    background:
+        #c43d38;
+}
+
+.gantt-cours {
+
+    background:
+        #5c91cb;
+}
+
+.gantt-objectif {
+
+    background:
+        #a47a3c;
+}
+
+.gantt-non-commence {
+
+    background:
+        #b9bec1;
+}
+
+/* =========================================================
+   LISTE VIGILANCE
+========================================================= */
+.table-section {
+
+    width: 100%;
+    
+    background: #ffffff;
+
+    border:
+        1px solid #e0e3e1;
+
+    padding: 10px;
+}
+
+.table-header {
+
+    align-items: center;
+}
+
+.source-label {
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    color: #8b9295;
+
+    border: 1px solid #d9dcda;
+
+    padding: 7px 9px;
+}
+
+.vigilance-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vigilance-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    padding: 12px 4px;
+
+    border-bottom: 1px solid #e5e7e5;
+}
+
+.vigilance-item:last-child {
+    border-bottom: none;
+}
+
+.vigilance-dot {
+    width: 6px;
+    height: 6px;
+
+    min-width: 6px;
+
+    margin-top: 5px;
+
+    border-radius: 50%;
+
+    background: #b9a27d;
+}
+
+.vigilance-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #425467;
+}
+
+.vigilance-empty {
+    padding: 20px 4px;
+
+    font-size: 10px;
+    color: #8b9298;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (
+    max-width: 900px
+) {
+
+    .header {
+
+        padding:
+            25px 20px;
+    }
+
+    .header {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            20px;
+    }
+
+    .header-right {
+
+        gap:
+            30px;
+    }
+
+    .model-image-wrapper {
+
+        height:
+            320px;
+    }
+
+    .planning-header {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            12px;
+    }
+
+    .planning-filter {
+
+        width:
+            100%;
+    }
+
+    .planning-filter select {
+
+        width:
+            100%;
+    }
+}
+
+
+/* ================================
+   RESPONSIVE — MOBILE
+================================ */
+
+@media (max-width: 800px) {
+
+    /* Page */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Conteneur principal */
+    .container,
+    .main-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    /* HEADER */
+    .top-header {
+        min-height: auto;
+        padding-top: 6px;
+        padding-bottom: 14px;
+        margin-bottom: 14px;
+    }
+
+    .header-right {
+        align-items: flex-end;
+    }
+
+    .week-display span {
+        font-size: 7px;
+    }
+
+    .week-display strong {
+        font-size: 9px;
+    }
+
+
+    /* ================================
+       MAQUETTE
+    ================================= */
+
+    .top-section {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    .model-section {
+        width: 100%;
+    }
+
+    .model-image-wrapper {
+        width: 100%;
+        height: 250px;
+    }
+
+    .model-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* ================================
+       BOTTOM SECTION
+    ================================= */
+
+    .bottom-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .planning-section,
+    .table-section {
+        width: 100%;
+        min-height: auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+
+    /* ================================
+       TITRES
+    ================================= */
+
+    .section-header {
+        margin-bottom: 10px;
+    }
+
+    .section-kicker {
+        font-size: 7px;
+    }
+
+    .section-header h2 {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .section-header p {
+        font-size: 9px;
+    }
+
+
+    /* ================================
+       FILTRE SEMAINE
+    ================================= */
+
+    .planning-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .planning-filter {
+        width: 100%;
+    }
+
+    .planning-filter select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* ================================
+       PLANNING
+    ================================= */
+
+    .planning-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .planning-row {
+        min-width: 650px;
+    }
+
+
+    /* ================================
+       POINTS DE VIGILANCE
+    ================================= */
+
+    .vigilance-item {
+        padding: 10px 2px;
+    }
+
+    .vigilance-text {
+        font-size: 10px;
+        line-height: 1.45;
+    }
+
+    .container,
+    .main-container {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+}
+}

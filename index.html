@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Control | Grand Stade Hassan II</title>
+
+    <!-- Police -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/Style.css">
+</head>
+
+
+<body>
+
+    <main class="dashboard">
+
+
+        <!-- ================================================= -->
+        <!-- HEADER -->
+        <!-- ================================================= -->
+
+        <header class="header">
+
+            <div class="header-left">
+
+                <div class="header-title">
+
+                    <div class="project-name">
+                        Grand Stade Hassan II
+                    </div>
+
+                    <h1>OBJECTIF - MÂT ZONE A</h1>
+
+                    <p>
+                        Plan · Planning · Points de vigilance
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <div class="week-info">
+
+                    <span id="headerWeek">
+                        SEMAINE
+                    </span>
+
+                    <span id="headerPeriod">
+                       
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================================================= -->
+        <!-- CONTENU PRINCIPAL -->
+        <!-- ================================================= -->
+
+        <div class="top-section">
+
+            <!-- ================================================= -->
+            <!-- MAQUETTE -->
+            <!-- ================================================= -->
+
+            <section class="model-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <div class="section-kicker">
+                            VUE 3D
+                        </div>
+
+                        <h2>Ouvrages Principaux</h2>
+
+                        <p>
+                            Visualisation des ouvrages de la semaine
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="model-image-wrapper">
+
+                    <img
+                        src="images/maquette.png"
+                        alt="Maquette du projet"
+                        class="model-image"
+                    >
+
+                </div>
+
+            </section>
+            
+        </div>
+        <div class="bottom-section">
+            <!-- ================================================= -->
+            <!-- PLANNING -->
+            <!-- ================================================= -->
+
+                <section class="planning-section">
+
+                    <div class="section-header planning-header">
+
+                        <div>
+
+                            <div class="section-kicker">
+                                PLANNING
+                            </div>
+
+                            <h2>Planning de la semaine</h2>
+
+                            <p>
+                                Data Date - Planning - Avancement
+                            </p>
+
+                        </div>
+
+
+                        <div class="planning-filter">
+
+                            <select id="weekSelect">
+                            </select> 
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Planning généré par JavaScript -->
+
+                    <div
+                        id="planningContainer"
+                        class="planning-container">
+                    </div>
+
+                </section>
+            <!-- ================================================= -->
+            <!-- TABLEAU -->
+            <!-- ================================================= -->
+
+            <section class="table-section">
+
+                    <div class="section-header table-header">
+
+                        <div>
+
+                            <div class="section-kicker">
+                                LISTE
+                            </div>
+
+                            <h2>Points de vigilance</h2>
+
+                            <p>
+                                Statut - Alerts
+                            </p>
+
+                        </div>
+
+
+                        <div class="source-label">
+                            SOURCE : DIRECTION
+                        </div>
+
+                    </div>
+
+
+                    <div
+                            id="vigilanceContainer"
+                            class="vigilance-container"
+                        >
+
+                    </div>
+
+            </section>
+        </div>
+           
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script/Script.js"></script>
+
+</body>
+
+</html>
