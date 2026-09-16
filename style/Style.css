@@ -923,7 +923,7 @@ body {
         width: 100%;
         height: auto;
         max-width: none;
-        object-fit: contain;
+        object-fit: cover;
         display: block;
     }
 
