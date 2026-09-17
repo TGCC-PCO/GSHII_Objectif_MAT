@@ -410,6 +410,11 @@ function afficherSemaine(
             )
         );
 
+        /* Image maquette */
+    mettreAJourImage(numeroSemaine)
+
+        /*Points de vigilance */
+    mettreAJourVigi(numeroSemaine)
 
     /*
        Calculer le lundi
@@ -658,7 +663,16 @@ function obtenirPeriodeSemaine(
 
 }
 
-
+/* =========================================================
+   METTRE A JOUR IMAGES PAR SEMAINE
+========================================================= */
+    function mettreAJourImage(numeroSemaine) {
+        const image = document.getElementById("modelImage");
+        if(!image) return;
+        const semaine = `S${String(numeroSemaine).padStart(2,"0")}`;
+        image.src = `../images/${semaine}.png`;
+        image.alt = `Maquette ${semaine}`;
+    }
 
 /* =========================================================
 =========================================================
@@ -1687,6 +1701,7 @@ function formatPeriodeMajuscule(
 /* =========================================================
    CHARGEMENT DES POINTS DE VIGILANCE
 ========================================================= */
+let vigilanceData = [];
 
 fetch("../data/vigilance.json")
 
@@ -1705,14 +1720,17 @@ fetch("../data/vigilance.json")
     })
 
     .then(data => {
-
-        console.log(
-            "Points de vigilance chargés :",
-            data
-        );
-
-        afficherPointsVigilance(data);
-
+        vigilanceData = data;
+        console.log("Points de vigilance chargés :", vigilanceData );
+        /* Réafficher le points de vigi */
+        const select = document.getElementById("weekSelect");
+        if (select && select.value) {
+            const numeroSemaine = parseInt (
+                select.value.split("-")[1].replace("S","")
+            );
+        mettreAJourVigi(numeroSemaine);
+        }
+        
     })
 
     .catch(error => {
@@ -1728,7 +1746,7 @@ fetch("../data/vigilance.json")
    AFFICHER LES POINTS DE VIGILANCE
 ========================================================= */
 
-function afficherPointsVigilance(points) {
+function mettreAJourVigi(numeroSemaine) {
 
     const container =
         document.getElementById(
@@ -1740,6 +1758,12 @@ function afficherPointsVigilance(points) {
         return;
 
     }
+     const semaine = `S${String(numeroSemaine).padStart(2, "0")}`;
+     console.log("Semaine recherchée :" , semaine);
+
+    const points = vigilanceData.filter(point =>
+        point["Semaine"] === semaine );
+    console.log("Points trouvées :" , points);
 
     if (
         !points ||
