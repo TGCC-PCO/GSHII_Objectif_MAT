@@ -1,7 +1,7 @@
 /* =========================================================
    CHARGEMENT DU PLANNING
 ========================================================= */
-fetch("../data/planning.json")
+fetch("data/planning.json")
 
     .then(response => {
 
@@ -670,7 +670,7 @@ function obtenirPeriodeSemaine(
         const image = document.getElementById("modelImage");
         if(!image) return;
         const semaine = `S${String(numeroSemaine).padStart(2,"0")}`;
-        image.src = `../images/${semaine}.png`;
+        image.src = `images/${semaine}.png`;
         image.alt = `Maquette ${semaine}`;
     }
 
@@ -1703,7 +1703,7 @@ function formatPeriodeMajuscule(
 ========================================================= */
 let vigilanceData = [];
 
-fetch("../data/vigilance.json")
+fetch("data/vigilance.json")
 
     .then(response => {
 
