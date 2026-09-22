@@ -69,7 +69,7 @@
 "Ouvrage":"Charpente métallique, Module Zone 1",
 "Début":"2026-09-07",
 "Fin":"2026-09-19",
-"Statut":"en cours"
+"Statut":"termine"
 },
 {
 "N°":"34",
@@ -85,7 +85,7 @@
 "Ouvrage":"Escaliers Chambords, CR11 - 2",
 "Début":"2026-09-14",
 "Fin":"2026-09-19",
-"Statut":"objectif"
+"Statut":"termine"
 },
 {
 "N°":"08",
@@ -93,7 +93,7 @@
 "Ouvrage":"Tête Chambords, CR12 - TT",
 "Début":"2026-09-14",
 "Fin":"2026-09-26",
-"Statut":"objectif"
+"Statut":"termine"
 },
 {
 "N°":"13",
@@ -117,7 +117,7 @@
 "Ouvrage":"Tête Chambords, CR11 - LV2",
 "Début":"2026-09-14",
 "Fin":"2026-09-19",
-"Statut":"objectif"
+"Statut":"termine"
 },
 {
 "N°":"18",
@@ -125,7 +125,7 @@
 "Ouvrage":"Gradins, Zone 1 Béton",
 "Début":"2026-09-14",
 "Fin":"2026-09-19",
-"Statut":"objectif"
+"Statut":"termine"
 },
 {
 "N°":"17",
@@ -141,7 +141,7 @@
 "Ouvrage":"Escaliers Chambords, CR11 - 3",
 "Début":"2026-09-21",
 "Fin":"2026-09-26",
-"Statut":"Non commencé"
+"Statut":"termine"
 },
 {
 "N°":"37",
@@ -149,15 +149,7 @@
 "Ouvrage":"Escaliers Chambords, CR11 - 4",
 "Début":"2026-09-28",
 "Fin":"2026-10-03",
-"Statut":"Non commencé"
-},
-{
-"N°":"11",
-"Zone":"Zone A",
-"Ouvrage":"Tête Chambords, CR11 - LV3",
-"Début":"2026-09-21",
-"Fin":"2026-09-26",
-"Statut":"Non commencé"
+"Statut":"objectif"
 },
 {
 "N°":"21",
@@ -189,7 +181,7 @@
 "Ouvrage":"Gradins, Zone 1 CM",
 "Début":"2026-09-21",
 "Fin":"2026-09-26",
-"Statut":"Non commencé"
+"Statut":"termine"
 },
 {
 "N°":"25",
@@ -237,7 +229,7 @@
 "Ouvrage":"Balcons, Balcon 1 - R+4",
 "Début":"2026-09-21",
 "Fin":"2026-09-22",
-"Statut":"Non commencé"
+"Statut":"termine"
 },
 {
 "N°":"42",
@@ -245,7 +237,7 @@
 "Ouvrage":"Balcons, Balcon 1 - R+5",
 "Début":"2026-09-23",
 "Fin":"2026-09-24",
-"Statut":"Non commencé"
+"Statut":"termine"
 },
 {
 "N°":"27",
@@ -269,7 +261,7 @@
 "Ouvrage":"Balcons, Balcon 1 - R+6",
 "Début":"2026-09-25",
 "Fin":"2026-09-26",
-"Statut":"Non commencé"
+"Statut":"termine"
 },
 {
 "N°":"12",
@@ -277,7 +269,7 @@
 "Ouvrage":"Tête Chambords, CR11 - LV4",
 "Début":"2026-09-28",
 "Fin":"2026-10-03",
-"Statut":"Non commencé"
+"Statut":"objectif"
 },
 {
 "N°":"16",
@@ -285,7 +277,7 @@
 "Ouvrage":"Charpente métallique, Module Zone 2",
 "Début":"2026-09-28",
 "Fin":"2026-10-10",
-"Statut":"Non commencé"
+"Statut":"objectif"
 },
 {
 "N°":"20",
@@ -293,7 +285,7 @@
 "Ouvrage":"Gradins, Zone 2 Béton",
 "Début":"2026-09-28",
 "Fin":"2026-10-03",
-"Statut":"Non commencé"
+"Statut":"objectif"
 },
 {
 "N°":"29",
@@ -301,7 +293,7 @@
 "Ouvrage":"Escaliers Chambords, CR12 - 3",
 "Début":"2026-09-14",
 "Fin":"2026-09-19",
-"Statut":"objectif"
+"Statut":"termine"
 },
 {
 "N°":"30",
@@ -309,7 +301,7 @@
 "Ouvrage":"Escaliers Chambords, CR12 - 4",
 "Début":"2026-09-21",
 "Fin":"2026-09-26",
-"Statut":"Non commencé"
+"Statut":"termine"
 },
 {
 "N°":"31",
@@ -317,7 +309,7 @@
 "Ouvrage":"Escaliers Chambords, CR12 - 5",
 "Début":"2026-09-28",
 "Fin":"2026-10-03",
-"Statut":"Non commencé"
+"Statut":"objectif"
 },
 {
 "N°":"24",
@@ -325,7 +317,7 @@
 "Ouvrage":"Mur supérieur et dalle de fermeture, Zone 1",
 "Début":"2026-09-28",
 "Fin":"2026-10-03",
-"Statut":"Non commencé"
+"Statut":"objectif"
 },
 {
 "N°":"32",
@@ -349,7 +341,7 @@
 "Ouvrage":"Balcons, Balcon 2 - R+4",
 "Début":"2026-09-28",
 "Fin":"2026-10-03",
-"Statut":"Non commencé"
+"Statut":"objectif"
 },
 {
 "N°":"45",
